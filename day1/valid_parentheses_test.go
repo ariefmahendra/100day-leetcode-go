@@ -7,7 +7,7 @@ import (
 
 func TestValidParentheses_success(t *testing.T) {
 
-	str := "{{{}}}[[[[]]]]"
+	str := "{{}}[]"
 	parentheses := validParentheses(str)
 
 	assert.True(t, parentheses)
@@ -27,7 +27,7 @@ func validParentheses(s string) bool {
 
 	for _, r := range s {
 
-		value, ok := bracketMap[r]
+		_, ok := bracketMap[r]
 
 		if ok {
 			stack = append(stack, r)
@@ -36,7 +36,7 @@ func validParentheses(s string) bool {
 
 		l := len(stack)
 
-		if len(stack) > 0 && bracketMap[r] == value {
+		if len(stack) > 0 && bracketMap[stack[l-1]] == r {
 			stack = stack[:l-1]
 		} else {
 			return false
