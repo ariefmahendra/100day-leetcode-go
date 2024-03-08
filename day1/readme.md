@@ -24,7 +24,9 @@ Example 2:
 
 ![longestCommonPrefix](assets/longest-common-prefix.png)
 
-### 2. Valid Parentheses 
+### 2. Valid Parentheses
+
+[code](valid_parentheses_test.go)
 
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
