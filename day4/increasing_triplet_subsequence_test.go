@@ -14,13 +14,13 @@ func TestIncreasingTripletSubsequence(t *testing.T) {
 }
 
 func increasingTriplet(nums []int) bool {
-	first, second := math.MaxInt32, math.MaxInt32
+	firstNumber, secondNumber := math.MaxInt32, math.MaxInt32
 
 	for _, num := range nums {
-		if num <= first {
-			first = num
-		} else if num <= second {
-			second = num
+		if num <= firstNumber {
+			firstNumber = num
+		} else if num <= secondNumber {
+			secondNumber = num
 		} else {
 			return true
 		}
