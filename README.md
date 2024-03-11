@@ -7,5 +7,5 @@ List of problem
 - [Day 4](day4/day4.md)
 - [Day 5](day5/day5.md)
 #### Two Pointers
-- [Day 6](Day6/readme.md)
+- [Day 6](day6/day6.md)
 - [Day 7](Day7/readme.md)
