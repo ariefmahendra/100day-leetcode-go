@@ -16,18 +16,30 @@ func TestFindMaxAverage_success(t *testing.T) {
 	assert.Equal(t, expected, result)
 }
 
+func TestFindMaxAverage_success_2(t *testing.T) {
+	nums := []int{5}
+	k := 1
+
+	expected := 5.0
+
+	result := findMaxAverage(nums, k)
+
+	assert.Equal(t, expected, result)
+}
+
 func findMaxAverage(nums []int, k int) float64 {
 	if k > len(nums) {
 		return -1.0
 	}
 
-	maxSum := 0
 	tempSum := 0
 
 	// init sum
 	for i := 0; i < k; i++ {
 		tempSum += nums[i]
 	}
+
+	maxSum := tempSum
 
 	//init start Index and last Index
 	startIndex := 0
