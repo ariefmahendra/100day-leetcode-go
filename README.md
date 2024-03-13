@@ -17,7 +17,12 @@ List of problem
   - String Compression
 #### Two Pointers
 - [Day 6](day6/day6.md)
+  - Moves Zeroes
 - [Day 7](day7/day7.md)
+  - Container With Most Water
 #### Sliding Window
 - [Day 7](day7/day7.md)
+  - Max Number of K-Sum Pairs
+  - Maximum Average Subarray I
 - [Day 8](day8/day8.md)
+  - Maximum Number of Vowels in a Substring of Given Length
